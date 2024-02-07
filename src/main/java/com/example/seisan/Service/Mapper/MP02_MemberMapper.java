@@ -1,13 +1,15 @@
 package com.example.seisan.Service.Mapper;
 
 import com.example.seisan.Controller.Form.FM02_MemberForm;
-import com.example.seisan.Repository.Entity.ET01_Event;
 import com.example.seisan.Repository.Entity.ET02_Member;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * db02_membersのMapper
+ */
 public class MP02_MemberMapper {
     /**
      * ET02_MemberからFM02_MemberFormにマッピングするメソッド

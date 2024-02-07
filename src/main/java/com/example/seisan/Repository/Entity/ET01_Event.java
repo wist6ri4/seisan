@@ -7,8 +7,11 @@ import lombok.Setter;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+/**
+ * db01_eventsのEntity
+ */
 @Entity
-@Table(name = "DB01_events")
+@Table(name = "db01_events")
 @Getter
 @Setter
 public class ET01_Event {

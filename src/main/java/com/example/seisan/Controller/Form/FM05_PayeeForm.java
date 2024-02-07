@@ -7,6 +7,9 @@ import lombok.Setter;
 
 import java.time.LocalDateTime;
 
+/**
+ * FM05_PayeeForm
+ */
 @Getter
 @Setter
 public class FM05_PayeeForm {

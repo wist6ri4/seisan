@@ -6,6 +6,9 @@ import lombok.Setter;
 
 import java.time.LocalDateTime;
 
+/**
+ * FM02_MemberForm
+ */
 @Getter
 @Setter
 public class FM02_MemberForm {

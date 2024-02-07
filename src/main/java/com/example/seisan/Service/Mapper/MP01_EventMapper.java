@@ -7,6 +7,9 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * db01_eventsのMapper
+ */
 public class MP01_EventMapper {
     /**
      * ET01_EventからFM01_EventFormにマッピングするメソッド

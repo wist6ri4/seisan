@@ -9,8 +9,11 @@ import org.hibernate.annotations.FetchMode;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+/**
+ * db03_paymentsのEntity
+ */
 @Entity
-@Table(name = "DB03_payments")
+@Table(name = "db03_payments")
 @Getter
 @Setter
 public class ET03_Payment {
