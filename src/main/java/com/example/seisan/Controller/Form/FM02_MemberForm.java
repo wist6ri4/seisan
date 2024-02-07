@@ -11,22 +11,16 @@ import java.time.LocalDateTime;
 public class FM02_MemberForm {
     // メンバーID
     private int id;
-
     // メンバー名
     private String name;
-
     // レート
     private float rate;
-
     // イベント
     private ET01_Event Event;
-
     // 削除フラグ
     private int isDeleted;
-
     // 作成日時
     private LocalDateTime createdDate;
-
     // 更新日時
     private LocalDateTime updatedDate;
 }

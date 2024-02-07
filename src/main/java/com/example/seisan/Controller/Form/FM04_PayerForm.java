@@ -12,19 +12,14 @@ import java.time.LocalDateTime;
 public class FM04_PayerForm {
     // 支払者ID
     private int id;
-
     // 支払
     private ET03_Payment Payment;
-
     // 支払メンバー
     private ET02_Member Member;
-
     // 削除フラグ
     private int isDeleted;
-
     // 作成日時
     private LocalDateTime createdDate;
-
     // 更新日時
     private LocalDateTime updatedDate;
 }

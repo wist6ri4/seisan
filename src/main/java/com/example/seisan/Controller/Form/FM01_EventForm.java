@@ -11,25 +11,18 @@ import java.time.LocalDateTime;
 public class FM01_EventForm {
     // イベントID
     private int id;
-
     // イベントタイトル
     private String title;
-
     // イベント概要
     private String description;
-
     // 日付
     private LocalDate date;
-
     // Notionリンク
     private String notionLink;
-
     // 削除フラグ
     private int isDeleted;
-
     // 作成日時
     private LocalDateTime createdDate;
-
     // 更新日時
     private LocalDateTime updatedDate;
 }
