@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+<html xmlns:th="http://www.w3.org/1999/xhtml" lang="ja">
+<head th:replace="SC00V_Common :: head(title = 'Top', links = ~{::link}, scripts = ~{::script}">
+    <link th:href="@{/css/ST01V.css}" rel="stylesheet">
+    <script th:src="@{/js/ST01V.js}" defer></script>
 </head>
 <body>
 
