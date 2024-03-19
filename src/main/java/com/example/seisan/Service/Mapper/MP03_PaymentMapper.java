@@ -1,7 +1,7 @@
 package com.example.seisan.Service.Mapper;
 
 import com.example.seisan.Controller.Form.FM03_PaymentForm;
-import com.example.seisan.Repository.Entity.ET03_Payment;
+import com.example.seisan.Repository.Entity.ET30_Payment;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -16,9 +16,9 @@ public class MP03_PaymentMapper {
      * @param entities DBから取得したEntity
      * @return マッピングしたForm
      */
-    public List<FM03_PaymentForm> setForm(List<ET03_Payment> entities) {
+    public List<FM03_PaymentForm> setForm(List<ET30_Payment> entities) {
         List<FM03_PaymentForm> forms = new ArrayList<>();
-        for(ET03_Payment entity : entities) {
+        for(ET30_Payment entity : entities) {
             FM03_PaymentForm form = new FM03_PaymentForm();
             // 支払ID
             form.setId(entity.getId());
@@ -47,8 +47,8 @@ public class MP03_PaymentMapper {
      * @param form Serviceから取得したForm
      * @return マッピングしたEntity
      */
-    public ET03_Payment setEntity(FM03_PaymentForm form) {
-        ET03_Payment entity = new ET03_Payment();
+    public ET30_Payment setEntity(FM03_PaymentForm form) {
+        ET30_Payment entity = new ET30_Payment();
         // 支払ID
         entity.setId(form.getId());
         // 支払タイトル

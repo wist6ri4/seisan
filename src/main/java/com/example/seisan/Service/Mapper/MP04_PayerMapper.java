@@ -1,7 +1,7 @@
 package com.example.seisan.Service.Mapper;
 
 import com.example.seisan.Controller.Form.FM04_PayerForm;
-import com.example.seisan.Repository.Entity.ET04_Payer;
+import com.example.seisan.Repository.Entity.ET24_Payer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,9 +15,9 @@ public class MP04_PayerMapper {
      * @param entities DBから取得したEntity
      * @return マッピングしたForm
      */
-    public List<FM04_PayerForm> setForm(List<ET04_Payer> entities) {
+    public List<FM04_PayerForm> setForm(List<ET24_Payer> entities) {
         List<FM04_PayerForm> forms = new ArrayList<>();
-        for(ET04_Payer entity : entities) {
+        for(ET24_Payer entity : entities) {
             FM04_PayerForm form = new FM04_PayerForm();
             // 支払者ID
             form.setId(entity.getId());
@@ -42,8 +42,8 @@ public class MP04_PayerMapper {
      * @param form Serviceから取得したForm
      * @return マッピングしたEntity
      */
-    public ET04_Payer setEntity(FM04_PayerForm form) {
-        ET04_Payer entity = new ET04_Payer();
+    public ET24_Payer setEntity(FM04_PayerForm form) {
+        ET24_Payer entity = new ET24_Payer();
         // 支払者ID
         entity.setId(form.getId());
         // 支払

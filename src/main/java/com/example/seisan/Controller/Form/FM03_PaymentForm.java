@@ -1,6 +1,6 @@
 package com.example.seisan.Controller.Form;
 
-import com.example.seisan.Repository.Entity.ET01_Event;
+import com.example.seisan.Repository.Entity.ET10_Event;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -22,7 +22,7 @@ public class FM03_PaymentForm {
     // 支払日
     private LocalDate date;
     // イベント
-    private ET01_Event Event;
+    private ET10_Event Event;
     // 削除フラグ
     private int isDeleted;
     // 作成日時

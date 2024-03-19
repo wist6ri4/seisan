@@ -7,11 +7,11 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 /**
- * FM01_EventForm
+ * FM10_EventForm
  */
 @Getter
 @Setter
-public class FM01_EventForm {
+public class FM10_EventForm {
     // イベントID
     private int id;
     // イベントタイトル

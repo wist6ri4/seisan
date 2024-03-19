@@ -1,6 +1,6 @@
 package com.example.seisan.Controller.Form;
 
-import com.example.seisan.Repository.Entity.ET01_Event;
+import com.example.seisan.Repository.Entity.ET10_Event;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -19,7 +19,7 @@ public class FM02_MemberForm {
     // レート
     private float rate;
     // イベント
-    private ET01_Event Event;
+    private ET10_Event Event;
     // 削除フラグ
     private int isDeleted;
     // 作成日時

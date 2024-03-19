@@ -1,7 +1,7 @@
 package com.example.seisan.Service.Mapper;
 
 import com.example.seisan.Controller.Form.FM05_PayeeForm;
-import com.example.seisan.Repository.Entity.ET05_Payee;
+import com.example.seisan.Repository.Entity.ET25_Payee;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,9 +15,9 @@ public class MP05_PayeeMapper {
      * @param entities DBから取得したEntity
      * @return マッピングしたForm
      */
-    public List<FM05_PayeeForm> setForm(List<ET05_Payee> entities) {
+    public List<FM05_PayeeForm> setForm(List<ET25_Payee> entities) {
         List<FM05_PayeeForm> forms = new ArrayList<>();
-        for(ET05_Payee entity : entities) {
+        for(ET25_Payee entity : entities) {
             FM05_PayeeForm form = new FM05_PayeeForm();
             // 支払者ID
             form.setId(entity.getId());
@@ -42,8 +42,8 @@ public class MP05_PayeeMapper {
      * @param form Serviceから取得したForm
      * @return マッピングしたEntity
      */
-    public ET05_Payee setEntity(FM05_PayeeForm form) {
-        ET05_Payee entity = new ET05_Payee();
+    public ET25_Payee setEntity(FM05_PayeeForm form) {
+        ET25_Payee entity = new ET25_Payee();
         // 支払者ID
         entity.setId(form.getId());
         // 支払

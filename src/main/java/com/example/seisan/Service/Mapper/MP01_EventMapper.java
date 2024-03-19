@@ -1,7 +1,7 @@
 package com.example.seisan.Service.Mapper;
 
-import com.example.seisan.Controller.Form.FM01_EventForm;
-import com.example.seisan.Repository.Entity.ET01_Event;
+import com.example.seisan.Controller.Form.FM10_EventForm;
+import com.example.seisan.Repository.Entity.ET10_Event;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -16,10 +16,10 @@ public class MP01_EventMapper {
      * @param entities DBから取得したEntity
      * @return マッピングしたForm
      */
-    public List<FM01_EventForm> setForm(List<ET01_Event> entities) {
-        List<FM01_EventForm> forms = new ArrayList<>();
-        for(ET01_Event entity : entities) {
-            FM01_EventForm form = new FM01_EventForm();
+    public List<FM10_EventForm> setForm(List<ET10_Event> entities) {
+        List<FM10_EventForm> forms = new ArrayList<>();
+        for(ET10_Event entity : entities) {
+            FM10_EventForm form = new FM10_EventForm();
 
             // イベントID
             form.setId(entity.getId());
@@ -48,8 +48,8 @@ public class MP01_EventMapper {
      * @param form Serviceから取得したForm
      * @return マッピングしたEntity
      */
-    public ET01_Event setEntity(FM01_EventForm form) {
-        ET01_Event entity = new ET01_Event();
+    public ET10_Event setEntity(FM10_EventForm form) {
+        ET10_Event entity = new ET10_Event();
 
         // イベントID
         entity.setId(form.getId());
