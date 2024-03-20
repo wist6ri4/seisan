@@ -3,16 +3,15 @@ package com.example.seisan.Service.Mapper;
 import com.example.seisan.Controller.Form.FM10_EventForm;
 import com.example.seisan.Repository.Entity.ET10_Event;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * db01_eventsのMapper
+ * db10_eventsのMapper
  */
-public class MP01_EventMapper {
+public class MP10_EventMapper {
     /**
-     * ET01_EventからFM01_EventFormにマッピングするメソッド
+     * ET10_EventからFM10_EventFormにマッピングするメソッド
      * @param entities DBから取得したEntity
      * @return マッピングしたForm
      */
@@ -44,7 +43,7 @@ public class MP01_EventMapper {
     }
 
     /**
-     * FM01_EventFormからET01_Eventにマッピングするメソッド
+     * FM10_EventFormからET10_Eventにマッピングするメソッド
      * @param form Serviceから取得したForm
      * @return マッピングしたEntity
      */
@@ -63,14 +62,7 @@ public class MP01_EventMapper {
         entity.setNotionLink(form.getNotionLink());
         // 削除フラグ
         entity.setIsDeleted(form.getIsDeleted());
-        // 作成日時
-        if(form.getCreatedDate() == null) {
-            entity.setCreatedDate(LocalDateTime.now());
-        }
-        // 更新日時
-        if(form.getUpdatedDate() == null) {
-            entity.setUpdatedDate(LocalDateTime.now());
-        }
+
         return entity;
     }
 

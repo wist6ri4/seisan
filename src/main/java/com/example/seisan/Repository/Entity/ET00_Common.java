@@ -27,4 +27,23 @@ public class ET00_Common {
     // 更新日時
     @Column(name = "updated_date")
     private LocalDateTime updatedDate;
+
+    /**
+     * Insert時に実行されるメソッド
+     */
+    @PrePersist
+    public void preInsert() {
+        LocalDateTime localDateTime = LocalDateTime.now();
+        setCreatedDate(localDateTime);
+        setUpdatedDate(localDateTime);
+    }
+
+    /**
+     * Update時に実行されるメソッド
+     */
+    @PreUpdate
+    public void preUpdate() {
+        LocalDateTime localDateTime = LocalDateTime.now();
+        setUpdatedDate(localDateTime);
+    }
 }

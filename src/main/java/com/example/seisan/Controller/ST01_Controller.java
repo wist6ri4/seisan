@@ -11,7 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
  * ST01トップ画面のコントローラークラス
  */
 @Controller
-@RequestMapping("ST01")
+@RequestMapping("/ST01")
 public class ST01_Controller {
     @Autowired Const Const;
 

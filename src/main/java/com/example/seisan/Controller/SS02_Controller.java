@@ -11,7 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
  * SS02グローバルメンバー一覧画面のコントローラークラス
  */
 @Controller
-@RequestMapping("SS02")
+@RequestMapping("/SS02")
 public class SS02_Controller {
     @Autowired Const Const;
 

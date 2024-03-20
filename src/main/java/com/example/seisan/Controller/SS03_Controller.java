@@ -11,7 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
  * SS03グローバルメンバータグ一覧画面のコントローラークラス
  */
 @Controller
-@RequestMapping("SS03")
+@RequestMapping("/SS03")
 public class SS03_Controller {
     @Autowired Const Const;
 

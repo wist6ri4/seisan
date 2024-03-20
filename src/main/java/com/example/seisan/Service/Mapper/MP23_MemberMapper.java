@@ -1,33 +1,37 @@
 package com.example.seisan.Service.Mapper;
 
-import com.example.seisan.Controller.Form.FM02_MemberForm;
+import com.example.seisan.Controller.Form.FM23_MemberForm;
 import com.example.seisan.Repository.Entity.ET23_Member;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * db02_membersのMapper
+ * db23_membersのMapper
  */
-public class MP02_MemberMapper {
+public class MP23_MemberMapper {
     /**
-     * ET02_MemberからFM02_MemberFormにマッピングするメソッド
+     * ET23_MemberからFM23_MemberFormにマッピングするメソッド
      * @param entities DBから取得したEntity
      * @return マッピングしたForm
      */
-    public List<FM02_MemberForm> setForm(List<ET23_Member> entities) {
-        List<FM02_MemberForm> forms = new ArrayList<>();
+    public List<FM23_MemberForm> setForm(List<ET23_Member> entities) {
+        List<FM23_MemberForm> forms = new ArrayList<>();
         for(ET23_Member entity : entities) {
-            FM02_MemberForm form = new FM02_MemberForm();
+            FM23_MemberForm form = new FM23_MemberForm();
+
             // メンバーID
             form.setId(entity.getId());
-            // メンバー名
-            form.setName(entity.getName());
             // レート
             form.setRate(entity.getRate());
+            // 金額固定フラグ
+            form.setIsAmountFixed(entity.getIsAmountFixed());
+            // 実支払金額
+            form.setAmount(entity.getAmount());
             // イベント
             form.setEvent(entity.getEvent());
+            // グローバルメンバー
+            form.setGlobalMember(entity.getGlobalMember());
             // 削除フラグ
             form.setIsDeleted(entity.getIsDeleted());
             // 作成日時
@@ -41,30 +45,28 @@ public class MP02_MemberMapper {
     }
 
     /**
-     * FM02_MemberFormからET02_Memberにマッピングするメソッド
+     * FM23_MemberFormからET23_Memberにマッピングするメソッド
      * @param form Serviceから取得したForm
      * @return マッピングしたEntity
      */
-    public ET23_Member setEntity(FM02_MemberForm form) {
+    public ET23_Member setEntity(FM23_MemberForm form) {
         ET23_Member entity = new ET23_Member();
+
         // メンバーID
         entity.setId(form.getId());
-        // メンバー名
-        entity.setName(form.getName());
         // レート
         entity.setRate(form.getRate());
+        // 金額固定フラグ
+        entity.setIsAmountFixed(form.getIsAmountFixed());
+        // 実支払金額
+        entity.setAmount(form.getAmount());
         // イベント
         entity.setEvent(form.getEvent());
+        // グローバルメンバー
+        entity.setGlobalMember(form.getGlobalMember());
         // 削除フラグ
         entity.setIsDeleted(form.getIsDeleted());
-        // 作成日時
-        if(form.getCreatedDate() == null) {
-            entity.setCreatedDate(LocalDateTime.now());
-        }
-        // 更新日時
-        if(form.getUpdatedDate() == null) {
-            entity.setUpdatedDate(LocalDateTime.now());
-        }
+
         return entity;
     }
 }

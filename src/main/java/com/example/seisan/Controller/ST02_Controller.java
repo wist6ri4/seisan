@@ -11,7 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
  * ST02清算画面のコントローラークラス
  */
 @Controller
-@RequestMapping("ST02")
+@RequestMapping("/ST02")
 public class ST02_Controller {
     @Autowired Const Const;
 

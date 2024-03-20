@@ -7,13 +7,11 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 /**
- * FM10_EventForm
+ * db10_EventのForm
  */
 @Getter
 @Setter
-public class FM10_EventForm {
-    // イベントID
-    private int id;
+public class FM10_EventForm extends FM00_CommonForm {
     // イベントタイトル
     private String title;
     // イベント概要
@@ -22,10 +20,4 @@ public class FM10_EventForm {
     private LocalDate date;
     // Notionリンク
     private String notionLink;
-    // 削除フラグ
-    private int isDeleted;
-    // 作成日時
-    private LocalDateTime createdDate;
-    // 更新日時
-    private LocalDateTime updatedDate;
 }

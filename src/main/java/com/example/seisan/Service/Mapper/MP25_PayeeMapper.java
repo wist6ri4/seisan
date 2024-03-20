@@ -1,24 +1,25 @@
 package com.example.seisan.Service.Mapper;
 
-import com.example.seisan.Controller.Form.FM04_PayerForm;
-import com.example.seisan.Repository.Entity.ET24_Payer;
+import com.example.seisan.Controller.Form.FM25_PayeeForm;
+import com.example.seisan.Repository.Entity.ET25_Payee;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * db04_payersのMapper
+ * db25_payeesのMapper
  */
-public class MP04_PayerMapper {
+public class MP25_PayeeMapper {
     /**
-     * ET04_PayerからFM04_PayerFormにマッピングするメソッド
+     * ET25_PayeeからFM25_PayeeFormにマッピングするメソッド
      * @param entities DBから取得したEntity
      * @return マッピングしたForm
      */
-    public List<FM04_PayerForm> setForm(List<ET24_Payer> entities) {
-        List<FM04_PayerForm> forms = new ArrayList<>();
-        for(ET24_Payer entity : entities) {
-            FM04_PayerForm form = new FM04_PayerForm();
+    public List<FM25_PayeeForm> setForm(List<ET25_Payee> entities) {
+        List<FM25_PayeeForm> forms = new ArrayList<>();
+        for(ET25_Payee entity : entities) {
+            FM25_PayeeForm form = new FM25_PayeeForm();
+
             // 支払者ID
             form.setId(entity.getId());
             // 支払
@@ -38,12 +39,13 @@ public class MP04_PayerMapper {
     }
 
     /**
-     * FM04_PaymentFormからET04_Payerにマッピングするメソッド
+     * FM25_PayeeFormからET25_Payeeにマッピングするメソッド
      * @param form Serviceから取得したForm
      * @return マッピングしたEntity
      */
-    public ET24_Payer setEntity(FM04_PayerForm form) {
-        ET24_Payer entity = new ET24_Payer();
+    public ET25_Payee setEntity(FM25_PayeeForm form) {
+        ET25_Payee entity = new ET25_Payee();
+
         // 支払者ID
         entity.setId(form.getId());
         // 支払
@@ -52,14 +54,7 @@ public class MP04_PayerMapper {
         entity.setMember(form.getMember());
         // 削除フラグ
         entity.setIsDeleted(form.getIsDeleted());
-        // 作成日時
-        if(form.getCreatedDate() == null) {
-            entity.setCreatedDate(form.getCreatedDate());
-        }
-        // 更新日時
-        if(form.getUpdatedDate() == null) {
-            entity.setUpdatedDate(form.getUpdatedDate());
-        }
+
         return entity;
     }
 }

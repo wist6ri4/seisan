@@ -11,7 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
  * SS01イベントタグ一覧画面のコントローラークラス
  */
 @Controller
-@RequestMapping("SS01")
+@RequestMapping("/SS01")
 public class SS01_Controller {
     @Autowired Const Const;
 

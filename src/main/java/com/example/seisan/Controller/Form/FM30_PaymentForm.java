@@ -8,25 +8,17 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 /**
- * FM03_PaymentForm
+ * db30_PaymentのForm
  */
 @Getter
 @Setter
-public class FM03_PaymentForm {
-    // 支払ID
-    private int id;
+public class FM30_PaymentForm extends FM00_CommonForm {
     // 支払タイトル
     private String title;
     // 支払金額
-    private int amount;
+    private Integer amount;
     // 支払日
     private LocalDate date;
     // イベント
-    private ET10_Event Event;
-    // 削除フラグ
-    private int isDeleted;
-    // 作成日時
-    private LocalDateTime createdDate;
-    // 更新日時
-    private LocalDateTime updatedDate;
+    private ET10_Event event;
 }
