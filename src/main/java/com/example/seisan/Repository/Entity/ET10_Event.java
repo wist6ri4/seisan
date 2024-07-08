@@ -31,7 +31,7 @@ public class ET10_Event extends ET00_Common {
     private String notionLink;
     // イベントタグのリスト
     @OneToMany
-    @JoinColumn(name = "id", referencedColumnName = "event_id", insertable = false, updatable = false)
+    @JoinColumn(name = "id", referencedColumnName = "id", insertable = false, updatable = false)
     @Fetch(FetchMode.JOIN)
     private List<ET12_EventRelation> eventRelations;
 }
