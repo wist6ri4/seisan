@@ -6,8 +6,6 @@ import lombok.Setter;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
-import java.time.LocalDateTime;
-
 /**
  * db23_membersのEntity
  */

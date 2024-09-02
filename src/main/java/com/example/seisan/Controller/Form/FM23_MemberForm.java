@@ -5,8 +5,6 @@ import com.example.seisan.Repository.Entity.ET20_GlobalMember;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.time.LocalDateTime;
-
 /**
  * db23_MemberのForm
  */

@@ -5,8 +5,6 @@ import com.example.seisan.Repository.Entity.ET30_Payment;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.time.LocalDateTime;
-
 /**
  * db24_PayerのForm
  */

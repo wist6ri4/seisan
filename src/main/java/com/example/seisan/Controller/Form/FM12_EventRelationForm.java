@@ -1,6 +1,5 @@
 package com.example.seisan.Controller.Form;
 
-import com.example.seisan.Repository.Entity.ET10_Event;
 import com.example.seisan.Repository.Entity.ET11_EventTag;
 import lombok.Getter;
 import lombok.Setter;

@@ -1,6 +1,5 @@
 package com.example.seisan.Controller.Form;
 
-import com.example.seisan.Repository.Entity.ET20_GlobalMember;
 import com.example.seisan.Repository.Entity.ET21_GlobalMemberTag;
 import lombok.Getter;
 import lombok.Setter;
