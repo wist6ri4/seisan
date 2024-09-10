@@ -1,0 +1,88 @@
+Date : 2024-09-11 00:31:42
+Directory : c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\java\com\example\seisan
+Total : 35 files,  -7058 codes, -1954 comments, -2127 blanks, all -11139 lines
+
+Languages
++-----------------+------------+------------+------------+------------+------------+
+| language        | files      | code       | comment    | blank      | total      |
++-----------------+------------+------------+------------+------------+------------+
+| CSS             |          7 |         -5 |         -4 |         -5 |        -14 |
+| Java Properties |          1 |         -7 |          0 |         -1 |         -8 |
+| Java            |          1 |         -9 |          0 |         -5 |        -14 |
+| Gradle          |          2 |        -34 |          0 |         -8 |        -42 |
+| Batch           |          1 |        -41 |        -30 |        -22 |        -93 |
+| HTML            |         16 |       -194 |        -27 |        -18 |       -239 |
+| JavaScript      |          7 |     -6,768 |     -1,893 |     -2,068 |    -10,729 |
++-----------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                   | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                      |         35 |     -7,058 |     -1,954 |     -2,127 |    -11,139 |
+| ..                                                                                                     |         35 |     -7,058 |     -1,954 |     -2,127 |    -11,139 |
+| ..\..                                                                                                  |         35 |     -7,058 |     -1,954 |     -2,127 |    -11,139 |
+| ..\..\..                                                                                               |         35 |     -7,058 |     -1,954 |     -2,127 |    -11,139 |
+| ..\..\..\..                                                                                            |         35 |     -7,058 |     -1,954 |     -2,127 |    -11,139 |
+| ..\..\..\..\..                                                                                         |          5 |        -91 |        -30 |        -36 |       -157 |
+| ..\..\..\..\..\..                                                                                      |          4 |        -82 |        -30 |        -31 |       -143 |
+| ..\..\..\..\..\.. (Files)                                                                              |          3 |        -75 |        -30 |        -30 |       -135 |
+| ..\..\..\..\..\..\gradle                                                                               |          1 |         -7 |          0 |         -1 |         -8 |
+| ..\..\..\..\..\..\gradle\wrapper                                                                       |          1 |         -7 |          0 |         -1 |         -8 |
+| ..\..\..\..\..\test                                                                                    |          1 |         -9 |          0 |         -5 |        -14 |
+| ..\..\..\..\..\test\java                                                                               |          1 |         -9 |          0 |         -5 |        -14 |
+| ..\..\..\..\..\test\java\com                                                                           |          1 |         -9 |          0 |         -5 |        -14 |
+| ..\..\..\..\..\test\java\com\example                                                                   |          1 |         -9 |          0 |         -5 |        -14 |
+| ..\..\..\..\..\test\java\com\example\seisan                                                            |          1 |         -9 |          0 |         -5 |        -14 |
+| ..\..\..\..\resources                                                                                  |         30 |     -6,967 |     -1,924 |     -2,091 |    -10,982 |
+| ..\..\..\..\resources\static                                                                           |         14 |     -6,773 |     -1,897 |     -2,073 |    -10,743 |
+| ..\..\..\..\resources\static\css                                                                       |          7 |         -5 |         -4 |         -5 |        -14 |
+| ..\..\..\..\resources\static\css (Files)                                                               |          6 |         -3 |          0 |         -5 |         -8 |
+| ..\..\..\..\resources\static\css\lib                                                                   |          1 |         -2 |         -4 |          0 |         -6 |
+| ..\..\..\..\resources\static\js                                                                        |          7 |     -6,768 |     -1,893 |     -2,068 |    -10,729 |
+| ..\..\..\..\resources\static\js (Files)                                                                |          5 |          0 |          0 |         -5 |         -5 |
+| ..\..\..\..\resources\static\js\lib                                                                    |          2 |     -6,768 |     -1,893 |     -2,063 |    -10,724 |
+| ..\..\..\..\resources\templates                                                                        |         16 |       -194 |        -27 |        -18 |       -239 |
++--------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------------------------+-----------------+------------+------------+------------+------------+
+| filename                                                                                               | language        | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------+-----------------+------------+------------+------------+------------+
+| c:\Users\Shiro Goto\IDEA Projects\seisan\build.gradle                                                  | Gradle          |        -33 |          0 |         -7 |        -40 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\gradle\wrapper\gradle-wrapper.properties                      | Java Properties |         -7 |          0 |         -1 |         -8 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\gradlew.bat                                                   | Batch           |        -41 |        -30 |        -22 |        -93 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\settings.gradle                                               | Gradle          |         -1 |          0 |         -1 |         -2 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\css\SC00V.css                       | CSS             |         -3 |          0 |          0 |         -3 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\css\SS01V.css                       | CSS             |          0 |          0 |         -1 |         -1 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\css\SS02V.css                       | CSS             |          0 |          0 |         -1 |         -1 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\css\SS03V.css                       | CSS             |          0 |          0 |         -1 |         -1 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\css\ST01V.css                       | CSS             |          0 |          0 |         -1 |         -1 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\css\ST02V.css                       | CSS             |          0 |          0 |         -1 |         -1 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\css\lib\bootstrap.min.css           | CSS             |         -2 |         -4 |          0 |         -6 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\js\SS01V.js                         | JavaScript      |          0 |          0 |         -1 |         -1 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\js\SS02V.js                         | JavaScript      |          0 |          0 |         -1 |         -1 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\js\SS03V.js                         | JavaScript      |          0 |          0 |         -1 |         -1 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\js\ST01V.js                         | JavaScript      |          0 |          0 |         -1 |         -1 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\js\ST02V.js                         | JavaScript      |          0 |          0 |         -1 |         -1 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\js\lib\bootstrap.min.js             | JavaScript      |         -1 |         -6 |          0 |         -7 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\js\lib\jquery-3.7.1.js              | JavaScript      |     -6,767 |     -1,887 |     -2,063 |    -10,717 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SC00V_Common.html                | HTML            |        -19 |        -18 |         -5 |        -42 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SM01V_EventRegist.html           | HTML            |         -9 |          0 |         -1 |        -10 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SM02V_EventEdit.html             | HTML            |         -9 |          0 |         -1 |        -10 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SM03V_PaymentRegist.html         | HTML            |         -9 |          0 |         -1 |        -10 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SM04V_PaymentEdit.html           | HTML            |         -9 |          0 |         -1 |        -10 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SM05V_EventTagRegist.html        | HTML            |         -9 |          0 |         -1 |        -10 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SM06V_EventTagEdit.html          | HTML            |         -9 |          0 |         -1 |        -10 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SM07V_GlobalMemberRegist.html    | HTML            |         -9 |          0 |         -1 |        -10 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SM08V_GlobalMemberEdit.html      | HTML            |         -9 |          0 |         -1 |        -10 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SM09V_GlobalMemberTagRegist.html | HTML            |         -9 |          0 |         -1 |        -10 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SM10V_GlobalMemberTagEdit.html   | HTML            |         -9 |          0 |         -1 |        -10 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SS01V_EventTag.html              | HTML            |        -11 |         -1 |          0 |        -12 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SS02V_GlobalMember.html          | HTML            |        -11 |         -1 |          0 |        -12 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SS03V_GlobalMemberTag.html       | HTML            |        -11 |         -1 |          0 |        -12 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\ST01V_Top.html                   | HTML            |        -41 |         -5 |         -2 |        -48 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\ST02V_Seisan.html                | HTML            |        -11 |         -1 |         -1 |        -13 |
+| c:\Users\Shiro Goto\IDEA Projects\seisan\src\test\java\com\example\seisan\SeisanApplicationTests.java  | Java            |         -9 |          0 |         -5 |        -14 |
+| Total                                                                                                  |                 |     -7,058 |     -1,954 |     -2,127 |    -11,139 |
++--------------------------------------------------------------------------------------------------------+-----------------+------------+------------+------------+------------+

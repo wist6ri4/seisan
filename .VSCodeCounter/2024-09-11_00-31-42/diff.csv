@@ -1,0 +1,37 @@
+"filename", "language", "Gradle", "Java Properties", "HTML", "Batch", "JavaScript", "Java", "CSS", "comment", "blank", "total"
+"c:\Users\Shiro Goto\IDEA Projects\seisan\build.gradle", "Gradle", -33, 0, 0, 0, 0, 0, 0, 0, -7, -40
+"c:\Users\Shiro Goto\IDEA Projects\seisan\gradle\wrapper\gradle-wrapper.properties", "Java Properties", 0, -7, 0, 0, 0, 0, 0, 0, -1, -8
+"c:\Users\Shiro Goto\IDEA Projects\seisan\gradlew.bat", "Batch", 0, 0, 0, -41, 0, 0, 0, -30, -22, -93
+"c:\Users\Shiro Goto\IDEA Projects\seisan\settings.gradle", "Gradle", -1, 0, 0, 0, 0, 0, 0, 0, -1, -2
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\css\SC00V.css", "CSS", 0, 0, 0, 0, 0, 0, -3, 0, 0, -3
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\css\SS01V.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 0, -1, -1
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\css\SS02V.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 0, -1, -1
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\css\SS03V.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 0, -1, -1
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\css\ST01V.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 0, -1, -1
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\css\ST02V.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 0, -1, -1
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\css\lib\bootstrap.min.css", "CSS", 0, 0, 0, 0, 0, 0, -2, -4, 0, -6
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\js\SS01V.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, -1, -1
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\js\SS02V.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, -1, -1
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\js\SS03V.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, -1, -1
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\js\ST01V.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, -1, -1
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\js\ST02V.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, -1, -1
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\js\lib\bootstrap.min.js", "JavaScript", 0, 0, 0, 0, -1, 0, 0, -6, 0, -7
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\static\js\lib\jquery-3.7.1.js", "JavaScript", 0, 0, 0, 0, -6767, 0, 0, -1887, -2063, -10717
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SC00V_Common.html", "HTML", 0, 0, -19, 0, 0, 0, 0, -18, -5, -42
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SM01V_EventRegist.html", "HTML", 0, 0, -9, 0, 0, 0, 0, 0, -1, -10
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SM02V_EventEdit.html", "HTML", 0, 0, -9, 0, 0, 0, 0, 0, -1, -10
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SM03V_PaymentRegist.html", "HTML", 0, 0, -9, 0, 0, 0, 0, 0, -1, -10
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SM04V_PaymentEdit.html", "HTML", 0, 0, -9, 0, 0, 0, 0, 0, -1, -10
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SM05V_EventTagRegist.html", "HTML", 0, 0, -9, 0, 0, 0, 0, 0, -1, -10
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SM06V_EventTagEdit.html", "HTML", 0, 0, -9, 0, 0, 0, 0, 0, -1, -10
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SM07V_GlobalMemberRegist.html", "HTML", 0, 0, -9, 0, 0, 0, 0, 0, -1, -10
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SM08V_GlobalMemberEdit.html", "HTML", 0, 0, -9, 0, 0, 0, 0, 0, -1, -10
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SM09V_GlobalMemberTagRegist.html", "HTML", 0, 0, -9, 0, 0, 0, 0, 0, -1, -10
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SM10V_GlobalMemberTagEdit.html", "HTML", 0, 0, -9, 0, 0, 0, 0, 0, -1, -10
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SS01V_EventTag.html", "HTML", 0, 0, -11, 0, 0, 0, 0, -1, 0, -12
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SS02V_GlobalMember.html", "HTML", 0, 0, -11, 0, 0, 0, 0, -1, 0, -12
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\SS03V_GlobalMemberTag.html", "HTML", 0, 0, -11, 0, 0, 0, 0, -1, 0, -12
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\ST01V_Top.html", "HTML", 0, 0, -41, 0, 0, 0, 0, -5, -2, -48
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\main\resources\templates\ST02V_Seisan.html", "HTML", 0, 0, -11, 0, 0, 0, 0, -1, -1, -13
+"c:\Users\Shiro Goto\IDEA Projects\seisan\src\test\java\com\example\seisan\SeisanApplicationTests.java", "Java", 0, 0, 0, 0, 0, -9, 0, 0, -5, -14
+"Total", "-", -34, -7, -194, -41, -6768, -9, -5, -1954, -2127, -11139
