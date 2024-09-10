@@ -18,12 +18,15 @@ public class ET00_Common {
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
     // 削除フラグ
     @Column(name = "is_deleted")
     private int isDeleted;
+
     // 作成日時
     @Column(name = "created_date")
     private LocalDateTime createdDate;
+    
     // 更新日時
     @Column(name = "updated_date")
     private LocalDateTime updatedDate;

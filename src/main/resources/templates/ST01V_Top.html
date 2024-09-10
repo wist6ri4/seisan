@@ -1,10 +1,48 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.w3.org/1999/xhtml" lang="ja">
-<head th:replace="SC00V_Common :: head(title = 'Top', links = ~{::link}, scripts = ~{::script}">
+<head th:replace="~{SC00V_Common :: head(title = 'Top', links = ~{::link}, scripts = ~{::script})}">
     <link th:href="@{/css/ST01V.css}" rel="stylesheet">
     <script th:src="@{/js/ST01V.js}" defer></script>
 </head>
 <body>
+    <!-- headerセクション -->
+    <section th:replace="~{SC00V_Common :: header}">
+    </section>
+    <div class="container">
+        <!-- 検索セクション -->
+        <section>
 
+        </section>
+        <!-- テーブルセクション -->
+        <section>
+            <div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Date</th>
+                            <th>People</th>
+                            <th>Notion Link</th>
+                            <th>Description</th>
+                            <th>Tag</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="event : ${events}">
+                            <td><a th:href="@{/ST02/{id}(id=${event.id})}" th:text="${event.title}"></a></td>
+                            <!-- #temporals.format: LocalDate、LocalDateTimeを扱えるメソッド群。月(.month)や曜日(.dayOfWeekName)の取得なども可能。 -->
+                            <td th:text="${#temporals.format(event.date, 'yyyy/MM/dd')}"></td>
+                            <td th:text="people"></td>
+                            <!-- target: 別タブで開くために設定; rel/noreferrer: リンク先にリンク元の情報を送信しない; rel/noopener: リンク先からリンク元にアクセスできないようにする -->
+                            <td><a th:href="${event.notionLink}" th:text="Notion" target="_blank" rel="noreferrer noopener"></a></td>
+                            <td th:text="${event.description}"></td>
+                            <td th:text="tag"></td>
+                        </tr>
+                    </tbody>
+    
+                </table>
+            </div>
+        </section>
+    </div>
 </body>
 </html>

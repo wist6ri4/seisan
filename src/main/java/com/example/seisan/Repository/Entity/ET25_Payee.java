@@ -19,6 +19,7 @@ public class ET25_Payee extends ET00_Common {
     @JoinColumn(name = "payment_id", referencedColumnName = "id")
     @Fetch(FetchMode.JOIN)
     private ET30_Payment Payment;
+    
     // メンバー
     @OneToOne
     @JoinColumn(name = "member_id", referencedColumnName = "id")

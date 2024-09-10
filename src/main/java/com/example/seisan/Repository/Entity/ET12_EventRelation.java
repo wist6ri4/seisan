@@ -17,6 +17,7 @@ public class ET12_EventRelation extends ET00_Common {
     // イベントID
     @Column(name = "event_id")
     private Integer eventId;
+    
     // イベントタグ
     @OneToOne
     @JoinColumn(name = "event_tag_id", referencedColumnName = "id")

@@ -1,17 +1,17 @@
 package com.example.seisan.Controller.Form;
 
-import com.example.seisan.Repository.Entity.ET21_GlobalMemberTag;
 import lombok.Getter;
 import lombok.Setter;
 
 /**
- * db22_GlobalMemberRelationのForm
+ * db22_globals_members_relationsのForm
  */
 @Getter
 @Setter
 public class FM22_GlobalMemberRelationForm extends FM00_CommonForm {
     // グローバルメンバーID
     private Integer globalMemberId;
+    
     // グローバルメンバータグ
-    private ET21_GlobalMemberTag globalMemberTag;
+    private FM21_GlobalMemberTagForm globalMemberTagForm;
 }

@@ -13,10 +13,13 @@ import java.time.LocalDateTime;
 public class FM00_CommonForm {
     // ID
     private int id;
+
     // 削除フラグ
     private int isDeleted;
+
     // 作成日時
     private LocalDateTime createdDate;
+    
     // 更新日時
     private LocalDateTime updatedDate;
 }

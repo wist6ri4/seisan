@@ -1,6 +1,6 @@
 package com.example.seisan.Controller;
 
-import com.example.seisan.Const.Const;
+import com.example.seisan.Const.ViewName;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +21,7 @@ public class SS02_Controller {
     public ModelAndView loadView() {
         ModelAndView mav = new ModelAndView();
 
-        mav.setViewName(Const.SS02V);
+        mav.setViewName(ViewName.SS02V.getViewName());
         return mav;
     }
 
@@ -29,10 +29,11 @@ public class SS02_Controller {
      * SM07V初期表示
      * @return 画面ModelAndView
      */
+    @GetMapping("/SM07V")
     private ModelAndView loadSM07V() {
         ModelAndView mav = new ModelAndView();
 
-        mav.setViewName(Const.SM07V);
+        mav.setViewName(ViewName.SM07V.getViewName());
         return mav;
     }
 
@@ -40,10 +41,11 @@ public class SS02_Controller {
      * SM08V初期表示
      * @return 画面ModelAndView
      */
+    @GetMapping("SM08V")
     private ModelAndView loadSM08V() {
         ModelAndView mav = new ModelAndView();
 
-        mav.setViewName(Const.SM08V);
+        mav.setViewName(ViewName.SM08V.getViewName());
         return mav;
     }
 }

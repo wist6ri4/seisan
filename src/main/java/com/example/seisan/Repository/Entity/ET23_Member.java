@@ -17,17 +17,21 @@ public class ET23_Member extends ET00_Common {
     // レート
     @Column(name = "rate")
     private float rate;
+
     // 金額固定フラグ
     @Column(name = "is_amount_fixed")
     private Integer isAmountFixed;
+
     // 実支払金額
     @Column(name = "amount")
     private Integer amount;
+
     // イベント
     @OneToOne
     @JoinColumn(name = "event_id", referencedColumnName = "id")
     @Fetch(FetchMode.JOIN)
     private ET10_Event event;
+    
     // グローバルメンバー
     @OneToOne
     @JoinColumn(name = "global_member_id", referencedColumnName = "id")

@@ -17,6 +17,7 @@ public class ET21_GlobalMemberTag extends ET00_Common {
     // グローバルメンバータグ名
     @Column(name = "tag_name")
     private String tagName;
+    
     // 色
     @Column(name = "color")
     private String color;

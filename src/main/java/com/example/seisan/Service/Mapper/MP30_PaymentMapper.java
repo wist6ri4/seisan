@@ -6,38 +6,55 @@ import com.example.seisan.Repository.Entity.ET30_Payment;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 /**
  * db30_paymentsのMapper
  */
+@Component
 public class MP30_PaymentMapper {
+
+    @Autowired
+    MP10_EventMapper eventMapper;
+
     /**
      * ET30_PaymentからFM30_PaymentFormにマッピングするメソッド
      * @param entities DBから取得したEntity
      * @return マッピングしたForm
      */
+    public FM30_PaymentForm setForm(ET30_Payment entity) {
+        FM30_PaymentForm form = new FM30_PaymentForm();
+
+        // 支払ID
+        form.setId(entity.getId());
+        // 支払タイトル
+        form.setTitle(entity.getTitle());
+        // 支払金額
+        form.setAmount(entity.getAmount());
+        // 支払日
+        form.setDate(entity.getDate());
+        // イベント
+        form.setEventForm(eventMapper.setForm(entity.getEvent()));
+        // 削除フラグ
+        form.setIsDeleted(entity.getIsDeleted());
+        // 作成日時
+        form.setCreatedDate(entity.getCreatedDate());
+        // 更新日時
+        form.setUpdatedDate(entity.getUpdatedDate());
+
+        return form;
+    }
+
+    /**
+     * List<ET30_Payment>からList<FM30_PaymentForm>にマッピングするメソッド
+     * @param entities DBから取得したEntityのリスト
+     * @return マッピングしたFormのリスト
+     */
     public List<FM30_PaymentForm> setForm(List<ET30_Payment> entities) {
         List<FM30_PaymentForm> forms = new ArrayList<>();
         for(ET30_Payment entity : entities) {
-            FM30_PaymentForm form = new FM30_PaymentForm();
-
-            // 支払ID
-            form.setId(entity.getId());
-            // 支払タイトル
-            form.setTitle(entity.getTitle());
-            // 支払金額
-            form.setAmount(entity.getAmount());
-            // 支払日
-            form.setDate(entity.getDate());
-            // イベント
-            form.setEvent(entity.getEvent());
-            // 削除フラグ
-            form.setIsDeleted(entity.getIsDeleted());
-            // 作成日時
-            form.setCreatedDate(entity.getCreatedDate());
-            // 更新日時
-            form.setUpdatedDate(entity.getUpdatedDate());
-
-            forms.add(form);
+            forms.add(setForm(entity));
         }
         return forms;
     }
@@ -59,7 +76,7 @@ public class MP30_PaymentMapper {
         // 支払日
         entity.setDate(form.getDate());
         // イベント
-        entity.setEvent(form.getEvent());
+        entity.setEvent(eventMapper.setEntity(form.getEventForm()));
         // 削除フラグ
         entity.setIsDeleted(form.getIsDeleted());
 

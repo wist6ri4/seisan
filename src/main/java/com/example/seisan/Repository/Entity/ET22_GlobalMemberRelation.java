@@ -17,6 +17,7 @@ public class ET22_GlobalMemberRelation extends ET00_Common {
     // グローバルメンバーID
     @Column(name = "global_member_id")
     private Integer globalMemberId;
+    
     // グローバルメンバータグ
     @OneToOne
     @JoinColumn(name = "global_member_tag_id", referencedColumnName = "id")

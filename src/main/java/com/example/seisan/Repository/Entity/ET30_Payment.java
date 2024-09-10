@@ -19,12 +19,15 @@ public class ET30_Payment extends  ET00_Common {
     // 支払タイトル
     @Column(name = "title")
     private String title;
+
     // 支払金額
     @Column(name = "amount")
     private int amount;
+
     // 支払日
     @Column(name = "date")
     private LocalDate date;
+    
     // イベント
     @OneToOne
     @JoinColumn(name = "event_id", referencedColumnName = "id")

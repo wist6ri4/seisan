@@ -2,15 +2,20 @@
 <html xmlns:th="http://www.w3.org/1999/xhtml" lang="ja">
 
 <!--
-th:fragment="フラグメント名(title, scripts, links)"　引数の設定ができる
-th:fragment="フラグメント名　　　　　　　　　　　　　　　 引数を設定しない場合
+【共通設定】
+◯引数の設定をする場合
+th:fragment="フラグメント名(title, scripts, links)"
+◯引数の設定をしない場合
+th:fragment="フラグメント名
 
-使う画面での記述 (引数あり)
-th:replace="テンプレート名 :: フラグメント名(title = '' , scripts links = ~{::script} , links links = ~{::link}) ">
-使う画面での記述 (引数なし)
-th:replace="テンプレート名 :: フラグメント名"
+【呼出先】
+◯引数あり
+th:replace="~{テンプレートファイル名 :: フラグメント名(title = 'タイトル' , scripts links = ~{::script} , links links = ~{::link})}">
+◯引数なし
+th:replace="~{テンプレートファイル名 :: フラグメント名}"
 -->
 
+<!-- head -->
 <head th:fragment="head(title, links, scripts)">
     <meta charset="UTF-8">
     <!--jQuery-->
@@ -21,9 +26,17 @@ th:replace="テンプレート名 :: フラグメント名"
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/88033c4958.js" crossorigin="anonymous"></script>
 
+    <link th:href="@{/css/SC00V.css}" rel="stylesheet">
     <th:block th:replace="${links} ?: _"/>
     <th:block th:replace="${scripts} ?: _"/>
     <title th:title="${title}"></title>
 </head>
+
+<!-- header -->
+<section th:fragment="header" class="header">
+    <div class="container">
+        <div>test</div>
+    </div>
+</section>
 
 </html>

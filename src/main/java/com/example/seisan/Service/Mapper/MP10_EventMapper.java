@@ -6,38 +6,57 @@ import com.example.seisan.Repository.Entity.ET10_Event;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 /**
  * db10_eventsのMapper
  */
+@Component
 public class MP10_EventMapper {
+
+    @Autowired
+    MP12_EventRelationMapper eventRelationMapper;
+
     /**
      * ET10_EventからFM10_EventFormにマッピングするメソッド
-     * @param entities DBから取得したEntity
+     * @param entity DBから取得したEntity
      * @return マッピングしたForm
+     */
+    public FM10_EventForm setForm(ET10_Event entity) {
+        FM10_EventForm form = new FM10_EventForm();
+
+        // イベントID
+        form.setId(entity.getId());
+        // イベントタイトル
+        form.setTitle(entity.getTitle());
+        // イベント概要
+        form.setDescription(entity.getDescription());
+        // 日付
+        form.setDate(entity.getDate());
+        // Notionリンク
+        form.setNotionLink(entity.getNotionLink());
+        // 削除フラグ
+        form.setIsDeleted(entity.getIsDeleted());
+        // 作成日時
+        form.setCreatedDate(entity.getCreatedDate());
+        // 更新日時
+        form.setCreatedDate(entity.getUpdatedDate());
+        // イベントタグ
+        form.setEventRelationForms(eventRelationMapper.setForm(entity.getEventRelations()));
+
+        return form;
+    }
+
+    /**
+     * List<ET10_Event>からList<FM10_EventForm>にマッピングするメソッド
+     * @param entities DBから取得したEntityのリスト
+     * @return マッピングしたFormのリスト
      */
     public List<FM10_EventForm> setForm(List<ET10_Event> entities) {
         List<FM10_EventForm> forms = new ArrayList<>();
         for(ET10_Event entity : entities) {
-            FM10_EventForm form = new FM10_EventForm();
-
-            // イベントID
-            form.setId(entity.getId());
-            // イベントタイトル
-            form.setTitle(entity.getTitle());
-            // イベント概要
-            form.setDescription(entity.getDescription());
-            // 日付
-            form.setDate(entity.getDate());
-            // Notionリンク
-            form.setNotionLink(entity.getNotionLink());
-            // 削除フラグ
-            form.setIsDeleted(entity.getIsDeleted());
-            // 作成日時
-            form.setCreatedDate(entity.getCreatedDate());
-            // 更新日時
-            form.setCreatedDate(entity.getUpdatedDate());
-
-            forms.add(form);
+            forms.add(setForm(entity));
         }
         return forms;
     }
