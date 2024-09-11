@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 /**
- * ET12_EventRelationのRepository
+ * db12_events_relationsのRepository
  */
 @Repository
 public interface DB12_EventRelationRepository extends JpaRepository<ET12_EventRelation, Integer> {

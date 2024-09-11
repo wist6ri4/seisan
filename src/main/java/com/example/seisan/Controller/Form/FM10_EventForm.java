@@ -4,7 +4,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.util.List;
-
 import java.time.LocalDate;
 
 /**
@@ -27,4 +26,8 @@ public class FM10_EventForm extends FM00_CommonForm {
 
     // イベントタグ
     private List<FM12_EventRelationForm> eventRelationForms;
+
+    // Transient Parameter
+    // イベント人数
+    private Long memberCount;
 }

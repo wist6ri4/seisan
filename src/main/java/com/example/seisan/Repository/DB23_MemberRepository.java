@@ -9,4 +9,11 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface DB23_MemberRepository extends JpaRepository<ET23_Member, Integer> {
+
+    /**
+     * event_idに紐づくmemberのカウント
+     * @param eventId イベントID
+     * @return イベント人数
+     */
+    Long countByEventId(Integer eventId);
 }

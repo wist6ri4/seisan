@@ -45,6 +45,10 @@ public class MP10_EventMapper {
         // イベントタグ
         form.setEventRelationForms(eventRelationMapper.setForm(entity.getEventRelations()));
 
+        // Transient Parameter
+        // イベント人数
+        form.setMemberCount(entity.getMemberCount());
+
         return form;
     }
 

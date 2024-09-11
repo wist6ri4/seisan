@@ -21,22 +21,35 @@
                         <tr>
                             <th>Title</th>
                             <th>Date</th>
-                            <th>People</th>
-                            <th>Notion Link</th>
+                            <th>Member</th>
+                            <th>Notion</th>
                             <th>Description</th>
                             <th>Tag</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr th:each="event : ${events}">
+                            <!-- Title -->
                             <td><a th:href="@{/ST02/{id}(id=${event.id})}" th:text="${event.title}"></a></td>
+                            <!-- Date -->
                             <!-- #temporals.format: LocalDate、LocalDateTimeを扱えるメソッド群。月(.month)や曜日(.dayOfWeekName)の取得なども可能。 -->
                             <td th:text="${#temporals.format(event.date, 'yyyy/MM/dd')}"></td>
-                            <td th:text="people"></td>
+                            <!-- Member -->
+                            <td th:text="${event.memberCount}"></td>
+                            <!-- Notion -->
                             <!-- target: 別タブで開くために設定; rel/noreferrer: リンク先にリンク元の情報を送信しない; rel/noopener: リンク先からリンク元にアクセスできないようにする -->
                             <td><a th:href="${event.notionLink}" th:text="Notion" target="_blank" rel="noreferrer noopener"></a></td>
+                            <!-- Description -->
                             <td th:text="${event.description}"></td>
-                            <td th:text="tag"></td>
+                            <!-- Tag -->
+                            <td>
+                                <ul class="list-group list-group-horizontal">
+                                    <li th:each="relationForm : ${event.eventRelationForms}"
+                                        th:if="${relationForm.eventTagForm != null}"
+                                        th:text="${relationForm.eventTagForm.tagName}" class="list-group-item"
+                                        th:style="'background-color: #' + ${relationForm.eventTagForm.color}"></li>
+                                </ul>
+                            </td>
                         </tr>
                     </tbody>
     

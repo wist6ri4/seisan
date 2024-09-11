@@ -38,4 +38,8 @@ public class ET10_Event extends ET00_Common {
     @JoinColumn(name = "id", referencedColumnName = "id", insertable = false, updatable = false)
     @Fetch(FetchMode.JOIN)
     private List<ET12_EventRelation> eventRelations;
+
+    // イベント人数
+    @Transient
+    private Long memberCount;
 }

@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 /**
- * ET21_GlobalMemberTagのRepository
+ * db21_globals_members_tagsのRepository
  */
 @Repository
 public interface DB21_GlobalMemberTagRepository extends JpaRepository<ET21_GlobalMemberTag, Integer> {

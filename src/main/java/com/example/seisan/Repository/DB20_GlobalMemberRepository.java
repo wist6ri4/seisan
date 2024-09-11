@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 /**
- * ET20_GlobalMemberのRepository
+ * db20_globals_membersのRepository
  */
 @Repository
 public interface DB20_GlobalMemberRepository extends JpaRepository<ET20_GlobalMember, Integer> {

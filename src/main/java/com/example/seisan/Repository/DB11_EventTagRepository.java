@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 /**
- * ET11_EventTagのRepository
+ * db11_events_tagsのRepository
  */
 @Repository
 public interface DB11_EventTagRepository extends JpaRepository<ET11_EventTag, Integer> {

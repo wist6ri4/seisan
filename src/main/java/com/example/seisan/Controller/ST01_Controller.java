@@ -30,7 +30,8 @@ public class ST01_Controller {
     public ModelAndView loadView() {
         ModelAndView mav = new ModelAndView();
 
-        List<FM10_EventForm> events = eventService.findAll();
+        List<FM10_EventForm> events = eventService.findAllWithMemberCount();
+
 
         mav.setViewName(ViewName.ST01V.getViewName());
         mav.addObject("events", events);

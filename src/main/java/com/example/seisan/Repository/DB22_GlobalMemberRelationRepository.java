@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 /**
- * ET22_GlobalMemberRelationのRepository
+ * db22_globals_members_relationsのRepository
  */
 @Repository
 public interface DB22_GlobalMemberRelationRepository extends JpaRepository<ET22_GlobalMemberRelation, Integer> {
