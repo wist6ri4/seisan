@@ -15,8 +15,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class MP12_EventRelationMapper {
 
-    @Autowired
-    MP11_EventTagMapper eventTagMapper;
+    @Autowired MP11_EventTagMapper eventTagMapper;
 
     /**
      * ET12_EventRelationからFM12_EventRelationFormにマッピングするメソッド
@@ -53,5 +52,25 @@ public class MP12_EventRelationMapper {
             forms.add(setForm(entity));
         }
         return forms;
+    }
+
+    /**
+     * FM12_EventRelationFormからET12_EventRelationにマッピングするメソッド
+     * @param form Serviceから取得したform
+     * @return マッピングしたentity
+     */
+    public ET12_EventRelation setEntity(FM12_EventRelationForm form) {
+        ET12_EventRelation entity = new ET12_EventRelation();
+
+        // イベント連関ID
+        entity.setId(form.getId());
+        // イベントID
+        entity.setEventId(form.getEventId());
+        // イベントタグ
+        entity.setEventTag(eventTagMapper.setEntity(form.getEventTagForm()));
+        // 削除フラグ
+        entity.setIsDeleted(form.getIsDeleted());
+
+        return entity;
     }
 }

@@ -2,56 +2,78 @@ package com.example.seisan.Service;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import com.example.seisan.Controller.Form.FM10_EventForm;
-import com.example.seisan.Repository.DB10_EventRepository;
-import com.example.seisan.Repository.DB23_MemberRepository;
-import com.example.seisan.Repository.Entity.ET10_Event;
-import com.example.seisan.Service.Mapper.MP10_EventMapper;
+import com.example.seisan.Controller.Form.FM11_EventTagForm;
+import com.example.seisan.Controller.Form.FM12_EventRelationForm;
 
-@Service
-public class SV01_EventService {
+public interface SV01_EventService {
 
-    @Autowired
-    DB10_EventRepository eventRepository;
+    /**
+     * FM10_EventFormのinsert
+     * @param form
+     * @return resultEventForm
+     */
+    public FM10_EventForm insert_FM10_EventForm(FM10_EventForm form);
 
-    @Autowired
-    DB23_MemberRepository memberRepository;
+    /**
+     * FM10_EventFormのupdate
+     * @param form
+     * @return resultEventForm
+     */
+    public FM10_EventForm update_FM10_EventForm(FM10_EventForm form);
 
-    @Autowired
-    MP10_EventMapper eventMapper;
+    /**
+     * FM10_EventFormのdelete
+     * @param form
+     * @return resultEventForm
+     */
+    public FM10_EventForm delete_FM10_EventForm(FM10_EventForm form);
 
-    public FM10_EventForm insert_FM10_EventForm(FM10_EventForm form) {
-        ET10_Event entity = eventMapper.setEntity(form);
-        FM10_EventForm resultForm = eventMapper.setForm(eventRepository.save(entity));
-        return resultForm;
-    }
+    /**
+     * FM11_EventTagFormのinsert
+     * @param form
+     * @return resultEventTagForm
+     */
+    public FM11_EventTagForm insert_FM11_EventTagForm(FM11_EventTagForm form);
 
-    public FM10_EventForm update_FM10_EventForm(FM10_EventForm form) {
-        ET10_Event entity = eventMapper.setEntity(form);
-        FM10_EventForm resultForm = eventMapper.setForm(eventRepository.save(entity));
-        return resultForm;
-    }
+    /**
+     * FM11_EventTagFormのupdate
+     * @param form
+     * @return resultEventTagForm
+     */
+    public FM11_EventTagForm update_FM11_EventTagForm(FM11_EventTagForm form);
 
-    public FM10_EventForm delete_FM10_EventForm(FM10_EventForm form) {
-        form.setIsDeleted(1);
-        ET10_Event entity = eventMapper.setEntity(form);
-        FM10_EventForm resultForm = eventMapper.setForm(eventRepository.save(entity));
-        return resultForm;
-    }
+    /**
+     * FM11_EventTagFormのdelete
+     * @param form
+     * @return resultEventTagForm
+     */
+    public FM11_EventTagForm delete_FM11_EventTagForm(FM11_EventTagForm form);
+
+    /**
+     * FM12_EventRelationFormのinsert
+     * @param form
+     * @return resultEventRelationForm
+     */
+    public FM12_EventRelationForm insert_FM12_EventRelationForm(FM12_EventRelationForm form);
+
+    /**
+     * FM12_EventRelationFormのupdate
+     * @param form
+     * @return resultEventRelationForm
+     */
+    public FM12_EventRelationForm update_FM12_EventRelationForm(FM12_EventRelationForm form);
+
+    /**
+     * FM12_EventRelationFormのdelete
+     * @param form
+     * @return resultEventRelationForm
+     */
+    public FM12_EventRelationForm delete_FM12_EventRelationForm(FM12_EventRelationForm form);
 
     /**
      * db10_EventのfindAllWithMemberCount
-     * 
      * @return List<FM10_EventForm>
      */
-    public List<FM10_EventForm> findAllWithMemberCount() {
-        List<ET10_Event> events = eventRepository.findAll();
-        for(ET10_Event event : events) {
-            event.setMemberCount(memberRepository.countByEventId(event.getId()));
-        }
-        return eventMapper.setForm(events);
-    }
+    public List<FM10_EventForm> findAllWithMemberCount();
 }
