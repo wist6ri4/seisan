@@ -18,6 +18,7 @@ public class SV03_PaymentServiceImpl implements SV03_PaymentService {
      * @param form
      * @return resultPaymentForm
      */
+    @Override
     public FM30_PaymentForm insert_FM30_PaymentForm(FM30_PaymentForm form) {
         ET30_Payment entity = mp30_PaymentMapper.setEntity(form);
         FM30_PaymentForm resultPaymentForm = mp30_PaymentMapper.setForm(db30_PaymentRepository.save(entity));
@@ -29,6 +30,7 @@ public class SV03_PaymentServiceImpl implements SV03_PaymentService {
      * @param form
      * @return resultPaymentForm
      */
+    @Override
     public FM30_PaymentForm update_FM30_PaymentForm(FM30_PaymentForm form) {
         ET30_Payment entity = mp30_PaymentMapper.setEntity(form);
         FM30_PaymentForm resultPaymentForm = mp30_PaymentMapper.setForm(db30_PaymentRepository.save(entity));
@@ -40,6 +42,7 @@ public class SV03_PaymentServiceImpl implements SV03_PaymentService {
      * @param form
      * @return resultPaymentForm
      */
+    @Override
     public FM30_PaymentForm delete_FM30_PaymentForm(FM30_PaymentForm form) {
         form.setIsDeleted(Const.IS_DELETED);
         ET30_Payment entity = mp30_PaymentMapper.setEntity(form);
