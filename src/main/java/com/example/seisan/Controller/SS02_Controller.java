@@ -15,6 +15,7 @@ public class SS02_Controller {
 
     /**
      * 画面初期表示
+     * SS02グローバルメンバー一覧画面
      * @return 画面ModelAndView
      */
     @GetMapping

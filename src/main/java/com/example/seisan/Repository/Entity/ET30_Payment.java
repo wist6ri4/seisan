@@ -16,6 +16,12 @@ import java.time.LocalDate;
 @Getter
 @Setter
 public class ET30_Payment extends  ET00_Common {
+    // 支払ID
+    @Id
+    @Column(name = "payment_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer paymentId;
+
     // 支払タイトル
     @Column(name = "title")
     private String title;

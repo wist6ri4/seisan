@@ -14,6 +14,12 @@ import org.hibernate.annotations.FetchMode;
 @Getter
 @Setter
 public class ET23_Member extends ET00_Common {
+    // メンバーID
+    @Id
+    @Column(name = "member_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer memberId;
+
     // レート
     @Column(name = "rate")
     private float rate;

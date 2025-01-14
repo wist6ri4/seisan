@@ -22,7 +22,7 @@ public class MP11_EventTagMapper {
         FM11_EventTagForm form = new FM11_EventTagForm();
 
         // イベントタグID
-        form.setId(entity.getId());
+        form.setId(entity.getEventTagId());
         // イベントタグ名
         form.setTagName(entity.getTagName());
         // 色
@@ -59,7 +59,7 @@ public class MP11_EventTagMapper {
         ET11_EventTag entity = new ET11_EventTag();
 
         // イベントタグID
-        entity.setId(form.getId());
+        entity.setEventTagId(form.getId());
         // イベントタグ名
         entity.setTagName(form.getTagName());
         // 色

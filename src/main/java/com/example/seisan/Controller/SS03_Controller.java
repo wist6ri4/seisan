@@ -16,6 +16,7 @@ public class SS03_Controller {
 
     /**
      * 画面初期表示
+     * SS03グローバルメンバータグ一覧画面
      * @return 画面ModelAndView
      */
     @GetMapping

@@ -26,7 +26,7 @@ public class MP12_EventRelationMapper {
         FM12_EventRelationForm form = new FM12_EventRelationForm();
 
         // イベント連関ID
-        form.setId(entity.getId());
+        form.setId(entity.getEventRelationId());
         // イベントID
         form.setEventId(entity.getEventId());
         // イベントタグ
@@ -63,7 +63,7 @@ public class MP12_EventRelationMapper {
         ET12_EventRelation entity = new ET12_EventRelation();
 
         // イベント連関ID
-        entity.setId(form.getId());
+        entity.setEventRelationId(form.getId());
         // イベントID
         entity.setEventId(form.getEventId());
         // イベントタグ

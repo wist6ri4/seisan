@@ -14,10 +14,16 @@ import org.hibernate.annotations.FetchMode;
 @Getter
 @Setter
 public class ET22_GlobalMemberRelation extends ET00_Common {
+    // グローバルメンバー関連ID
+    @Id
+    @Column(name = "global_member_relation_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer globalMemberRelationId;
+
     // グローバルメンバーID
     @Column(name = "global_member_id")
     private Integer globalMemberId;
-    
+
     // グローバルメンバータグ
     @OneToOne
     @JoinColumn(name = "global_member_tag_id", referencedColumnName = "id")

@@ -22,7 +22,7 @@ public class MP21_GlobalMemberTagMapper {
         FM21_GlobalMemberTagForm form = new FM21_GlobalMemberTagForm();
 
         // グローバルメンバータグID
-        form.setId(entity.getId());
+        form.setId(entity.getGlobalMemberTagId());
         // グローバルメンバータグ名
         form.setTagName(entity.getTagName());
         // 色
@@ -59,7 +59,7 @@ public class MP21_GlobalMemberTagMapper {
         ET21_GlobalMemberTag entity = new ET21_GlobalMemberTag();
 
         // グローバルメンバータグID
-        entity.setId(form.getId());
+        entity.setGlobalMemberTagId(form.getId());
         // グローバルメンバータグ名
         entity.setTagName(form.getTagName());
         // 色

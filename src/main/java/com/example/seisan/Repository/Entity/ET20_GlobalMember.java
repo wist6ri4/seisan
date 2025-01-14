@@ -16,6 +16,12 @@ import java.util.List;
 @Getter
 @Setter
 public class ET20_GlobalMember extends ET00_Common {
+    // グローバルメンバーID
+    @Id
+    @Column(name = "global_member_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer globalMemberId;
+
     // グローバルメンバー名
     @Column(name = "name")
     private String name;
@@ -27,7 +33,7 @@ public class ET20_GlobalMember extends ET00_Common {
     // 名
     @Column(name = "last_name")
     private String lastName;
-    
+
     // グローバルメンバータグのリスト
     @OneToMany
     @JoinColumn(name = "global_member_tag_id", referencedColumnName = "id", insertable = false, updatable = false)

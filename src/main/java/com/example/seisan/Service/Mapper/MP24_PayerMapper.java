@@ -30,7 +30,7 @@ public class MP24_PayerMapper {
         FM24_PayerForm form = new FM24_PayerForm();
 
         // 支払者ID
-        form.setId(entity.getId());
+        form.setId(entity.getPayerId());
         // 支払
         form.setPaymentForm(paymentMapper.setForm(entity.getPayment()));
         // メンバー
@@ -67,7 +67,7 @@ public class MP24_PayerMapper {
         ET24_Payer entity = new ET24_Payer();
 
         // 支払者ID
-        entity.setId(form.getId());
+        entity.setPayerId(form.getId());
         // 支払
         entity.setPayment(paymentMapper.setEntity(form.getPaymentForm()));
         // メンバー

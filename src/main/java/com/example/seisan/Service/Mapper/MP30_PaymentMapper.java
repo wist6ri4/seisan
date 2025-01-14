@@ -27,7 +27,7 @@ public class MP30_PaymentMapper {
         FM30_PaymentForm form = new FM30_PaymentForm();
 
         // 支払ID
-        form.setId(entity.getId());
+        form.setId(entity.getPaymentId());
         // 支払タイトル
         form.setTitle(entity.getTitle());
         // 支払金額
@@ -68,7 +68,7 @@ public class MP30_PaymentMapper {
         ET30_Payment entity = new ET30_Payment();
 
         // 支払ID
-        entity.setId(form.getId());
+        entity.setPaymentId(form.getId());
         // 支払タイトル
         entity.setTitle(form.getTitle());
         // 支払金額

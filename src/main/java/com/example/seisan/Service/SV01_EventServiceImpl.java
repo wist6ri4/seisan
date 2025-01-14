@@ -150,7 +150,7 @@ public class SV01_EventServiceImpl implements SV01_EventService {
     public List<FM10_EventForm> findAllWithMemberCount() {
         List<ET10_Event> events = db10_EventRepository.findAll();
         for(ET10_Event event : events) {
-            event.setMemberCount(db23_MemberRepository.countByEventId(event.getId()));
+            event.setMemberCount(db23_MemberRepository.countByEventId(event.getEventId()));
         }
         return mp10_EventMapper.setForm(events);
     }

@@ -27,7 +27,7 @@ public class MP20_GlobalMemberMapper {
         FM20_GlobalMemberForm form = new FM20_GlobalMemberForm();
 
         // グローバルメンバーID
-        form.setId(entity.getId());
+        form.setId(entity.getGlobalMemberId());
         // グローバルメンバー名
         form.setName(entity.getName());
         // 姓
@@ -68,7 +68,7 @@ public class MP20_GlobalMemberMapper {
         ET20_GlobalMember entity = new ET20_GlobalMember();
 
         // グローバルメンバーID
-        entity.setId(form.getId());
+        entity.setGlobalMemberId(form.getId());
         // グローバルメンバー名
         entity.setName(form.getName());
         // 姓

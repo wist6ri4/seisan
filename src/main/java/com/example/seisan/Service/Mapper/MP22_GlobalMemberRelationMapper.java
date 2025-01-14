@@ -27,7 +27,7 @@ public class MP22_GlobalMemberRelationMapper {
         FM22_GlobalMemberRelationForm form = new FM22_GlobalMemberRelationForm();
 
         // グローバルメンバー連関ID
-        form.setId(entity.getId());
+        form.setId(entity.getGlobalMemberRelationId());
         // グローバルメンバーID
         form.setGlobalMemberId(entity.getGlobalMemberId());
         // グローバルメンバータグ
@@ -64,7 +64,7 @@ public class MP22_GlobalMemberRelationMapper {
         ET22_GlobalMemberRelation entity = new ET22_GlobalMemberRelation();
 
         // グローバルメンバー連関ID
-        entity.setId(form.getId());
+        entity.setGlobalMemberRelationId(form.getId());
         // グローバルメンバーID
         entity.setGlobalMemberId(form.getGlobalMemberId());
         // グローバルメンバータグ

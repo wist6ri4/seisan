@@ -27,7 +27,7 @@ public class MP10_EventMapper {
         FM10_EventForm form = new FM10_EventForm();
 
         // イベントID
-        form.setId(entity.getId());
+        form.setId(entity.getEventId());
         // イベントタイトル
         form.setTitle(entity.getTitle());
         // イベント概要
@@ -74,7 +74,7 @@ public class MP10_EventMapper {
         ET10_Event entity = new ET10_Event();
 
         // イベントID
-        entity.setId(form.getId());
+        entity.setEventId(form.getId());
         // イベントタイトル
         entity.setTitle(form.getTitle());
         // イベント概要

@@ -15,6 +15,7 @@ public class SS01_Controller {
 
     /**
      * 画面初期表示
+     * SS01イベントタグ一覧画面
      * @return 画面ModelAndView
      */
     @GetMapping

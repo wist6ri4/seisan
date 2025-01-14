@@ -17,6 +17,12 @@ import java.util.List;
 @Getter
 @Setter
 public class ET10_Event extends ET00_Common {
+    // イベントID
+    @Id
+    @Column(name = "event_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int eventId;
+
     // イベントタイトル
     @Column(name = "title")
     private String title;
@@ -32,7 +38,7 @@ public class ET10_Event extends ET00_Common {
     // Notionリンク
     @Column(name = "notion_link")
     private String notionLink;
-    
+
     // イベントタグのリスト
     @OneToMany
     @JoinColumn(name = "id", referencedColumnName = "id", insertable = false, updatable = false)

@@ -27,7 +27,7 @@ public class MP23_MemberMapper {
         FM23_MemberForm form = new FM23_MemberForm();
 
         // メンバーID
-        form.setId(entity.getId());
+        form.setId(entity.getMemberId());
         // レート
         form.setRate(entity.getRate());
         // 金額固定フラグ
@@ -70,7 +70,7 @@ public class MP23_MemberMapper {
         ET23_Member entity = new ET23_Member();
 
         // メンバーID
-        entity.setId(form.getId());
+        entity.setMemberId(form.getId());
         // レート
         entity.setRate(form.getRate());
         // 金額固定フラグ
